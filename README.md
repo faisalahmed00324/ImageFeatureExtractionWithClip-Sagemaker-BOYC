@@ -23,7 +23,7 @@ This project includes a sample endpoint for inference and a Jupyter notebook for
 
 ---
 
-### 📦nstallation I
+### 📦Installation 
 
   Clone the repository:
   ```bash
@@ -38,10 +38,10 @@ This project includes a sample endpoint for inference and a Jupyter notebook for
   Run Locally:
     ```python endpoint.py```
   Build and Run with Docker:
-    ```bash
-    docker build -t clip-web-api .
-    docker run -it clip-web-api serve
-    ```
+  ```
+  docker build -t clip-web-api .
+  docker run -it clip-web-api serve
+  ```
 Deploy with Jupyter Notebook on sagemaker
 See deploy.ipynb for step-by-step deployment instructions.
 
