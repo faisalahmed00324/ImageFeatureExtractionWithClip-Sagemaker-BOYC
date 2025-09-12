@@ -23,7 +23,7 @@ This project includes a sample endpoint for inference and a Jupyter notebook for
 
 ---
 
-### 📦 Installation
+### 📦nstallation I
 
   Clone the repository:
   ```bash
@@ -34,7 +34,7 @@ This project includes a sample endpoint for inference and a Jupyter notebook for
   Install dependencies:
     ```pip install -r requirements.txt```
 
-## ⚡ Usage
+### ⚡ Usage
   Run Locally:
     ```python endpoint.py```
   Build and Run with Docker:
