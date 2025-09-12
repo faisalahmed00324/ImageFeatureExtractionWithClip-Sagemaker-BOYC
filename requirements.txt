@@ -1,0 +1,6 @@
+fastapi
+pydantic
+pillow
+torch
+transformers
+uvicorn
