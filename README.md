@@ -1,4 +1,4 @@
-# ImageSearchWithClip-Sagemaker-BOYC
+# ImageFeatureExtractionWithClip-Sagemaker-BOYC
 
 A lightweight Python API for serving the **CLIP** model, designed for easy deployment with **Amazon SageMaker**.  
 This project includes a sample endpoint for inference and a Jupyter notebook for deployment automation.
