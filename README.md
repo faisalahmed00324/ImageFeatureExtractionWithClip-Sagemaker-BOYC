@@ -25,21 +25,23 @@ This project includes a sample endpoint for inference and a Jupyter notebook for
 
 ### 📦 Installation
 
-Clone the repository:
-```bash
-git clone https://github.com/faisalahmed00324/ImageSearchWithClip-Sagemaker-BOYC.git
-cd ImageSearchWithClip-Sagemaker-BOYC
-
-
-Install dependencies:
-  'pip install -r requirements.txt'
+  Clone the repository:
+  ```bash
+  git clone https://github.com/faisalahmed00324/ImageSearchWithClip-Sagemaker-BOYC.git
+  cd ImageSearchWithClip-Sagemaker-BOYC
+  ```
+  
+  Install dependencies:
+    ```pip install -r requirements.txt```
 
 ## ⚡ Usage
-Run Locally
-  "python endpoint.py"
-Build and Run with Docker
-  "docker build -t clip-web-api ."
-  "docker run -it clip-web-api serve"
+  Run Locally
+    ```python endpoint.py```
+  Build and Run with Docker
+    ```
+    docker build -t clip-web-api .
+    docker run -it clip-web-api serve
+    ```
 Deploy with Jupyter Notebook on sagemaker
 See deploy.ipynb for step-by-step deployment instructions.
 
