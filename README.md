@@ -1,4 +1,4 @@
-<img width="215" height="19" alt="image" src="https://github.com/user-attachments/assets/ed83f2c1-c1cf-4b2c-a264-1c52f5862c96" />ImageSearchWithClip-Sagemaker-BOYC
+ImageSearchWithClip-Sagemaker-BOYC
 A lightweight Python API for serving Clip model, designed for easy deployment with sagemaker. This project includes a sample endpoint for inference and a Jupyter notebook for deployment automation.
 
 Features
