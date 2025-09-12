@@ -1,26 +1,40 @@
-ImageSearchWithClip-Sagemaker-BOYC
-A lightweight Python API for serving Clip model, designed for easy deployment with sagemaker. This project includes a sample endpoint for inference and a Jupyter notebook for deployment automation.
+# ImageSearchWithClip-Sagemaker-BOYC
 
-Features
-REST API for ML model inference (endpoint.py)
-Dockerfile for containerized deployment
-Jupyter notebook (deploy.ipynb) for deployment automation
-Compatible with SageMaker
-Getting Started
-Prerequisites
-Python 3.12+
-Docker
-Jupyter Notebook
-The Jupyter Notebook was excuted from a sagemaker notebook instace
-Installation
+A lightweight Python API for serving the **CLIP** model, designed for easy deployment with **Amazon SageMaker**.  
+This project includes a sample endpoint for inference and a Jupyter notebook for deployment automation.
+
+---
+
+## ✨ Features
+- **REST API** for ML model inference (`endpoint.py`)  
+- **Dockerfile** for containerized deployment  
+- **Jupyter notebook (`deploy.ipynb`)** for deployment automation  
+- **Compatible with SageMaker**
+
+---
+
+## 🚀 Getting Started
+
+### ✅ Prerequisites
+- Python **3.12+**
+- Docker
+- Jupyter Notebook  
+*(The Jupyter Notebook was executed from a SageMaker notebook instance.)*
+
+---
+
+### 📦 Installation
+
 Clone the repository:
-  'git clone https://github.com/faisalahmed00324/ImageSearchWithClip-Sagemaker-BOYC.git'
-  'cd ImageSearchWithClip-Sagemaker-BOYC'
+```bash
+git clone https://github.com/faisalahmed00324/ImageSearchWithClip-Sagemaker-BOYC.git
+cd ImageSearchWithClip-Sagemaker-BOYC
+
 
 Install dependencies:
   'pip install -r requirements.txt'
 
-Usage
+## ⚡ Usage
 Run Locally
   "python endpoint.py"
 Build and Run with Docker
