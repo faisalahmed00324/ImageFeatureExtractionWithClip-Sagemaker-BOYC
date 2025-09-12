@@ -35,9 +35,9 @@ This project includes a sample endpoint for inference and a Jupyter notebook for
     ```pip install -r requirements.txt```
 
 ## ⚡ Usage
-  Run Locally
+  Run Locally:
     ```python endpoint.py```
-  Build and Run with Docker
+  Build and Run with Docker:
     ```bash
     docker build -t clip-web-api .
     docker run -it clip-web-api serve
