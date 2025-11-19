@@ -20,6 +20,8 @@ model.eval()
 class ImageRequest(BaseModel):
     image: str  # base64 encoded
 
+class TextRequest(BaseModel):
+    text: str
 
 @app.get("/ping")
 def ping():
@@ -33,6 +35,17 @@ def get_embedding(req: ImageRequest):
         inputs = processor(images=image, return_tensors="pt")
         with torch.no_grad():
             embedding = model.get_image_features(**inputs)
+        embedding = embedding / embedding.norm(p=2, dim=-1, keepdim=True)
+        return {"embedding": embedding.squeeze().tolist()}
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=str(e))
+
+@app.post("/text-embedding")
+def get_text_embedding(req: TextRequest):
+    try:
+        inputs = processor(text=req.text, return_tensors="pt", padding=True)
+        with torch.no_grad():
+            embedding = model.get_text_features(**inputs)
         embedding = embedding / embedding.norm(p=2, dim=-1, keepdim=True)
         return {"embedding": embedding.squeeze().tolist()}
     except Exception as e:
