@@ -4,7 +4,8 @@ FROM python:3.9-slim
 RUN apt-get update && apt-get install -y git && rm -rf /var/lib/apt/lists/*
 
 # Install Python deps
-RUN pip install --no-cache-dir fastapi uvicorn transformers torch pillow
+COPY requirements.txt /opt/program/requirements.txt
+RUN pip install --no-cache-dir -r /opt/program/requirements.txt
 
 # Pre-download CLIP model into image
 RUN python -c "from transformers import CLIPProcessor, CLIPModel; \
